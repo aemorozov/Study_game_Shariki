@@ -449,8 +449,8 @@ export class Game extends Container
                 }
                 if (sec == 0) {
                     clearInterval(timer)
-                    // this.removeChild(...balls)
-                    // document.querySelector(".count").classList.add('big-score')
+                    this.removeChild(...balls)
+                    document.querySelector(".count").classList.add('big-score')
                 }
                 sec--;
             }, 1000)
