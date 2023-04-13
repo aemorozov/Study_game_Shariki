@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TypeScript demo Project</title>
+    <style>
+      html {
+        background-color: #001100;
+      }
+      body {
+        background-color: #001100;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+      .timer,
+      .count {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 20px;
+      }
+      .count {
+        top: 35px;
+      }
+      .big-score {
+        font-size: 50px;
+        font-weight: bold;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <p class="timer">Time: <span id="timer">1:00</span></p>
+    <p class="count">Count: <span id="count">0</span></p>
+    <script src="/public/main.js"></script>
+  </body>
+</html>

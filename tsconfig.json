@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "app/temp",
+    "noImplicitAny" : true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "module": "ES2015",
+    "target": "ES2018",
+    "sourceMap": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "isolatedModules": true
+  },
+  "files": [
+    "./sources/Main.ts",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
