@@ -316,6 +316,7 @@ export class Game extends Container
                                 ballsInLineIndexes3Times.push(i + 1)
                                 ballsInLineIndexes3Times.push(i + 2)
                             }
+                            
                     }
 
                     if(balls[i].texture === balls[i - 1]?.texture 
