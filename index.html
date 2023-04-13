@@ -16,7 +16,8 @@
         position: fixed;
       }
       .timer,
-      .count {
+      .count,
+      .text {
         position: absolute;
         top: 10px;
         left: 10px;
@@ -24,6 +25,9 @@
       }
       .count {
         top: 35px;
+      }
+      .text {
+        top: 60px;
       }
       .big-score {
         font-size: 50px;
@@ -37,6 +41,7 @@
   <body>
     <p class="timer">Time: <span id="timer">1:00</span></p>
     <p class="count">Count: <span id="count">0</span></p>
+    <p class="text">Click <strong>F12</strong> for more info</p>
     <script src="/public/main.js"></script>
   </body>
 </html>

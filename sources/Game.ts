@@ -80,10 +80,6 @@ export class Game extends Container
                 positionY = ((Game.HEIGHT / 2) - (gridSize / 2))
                 firstStart()
             }
-            for(let i = 0; i < balls.length; i++) {
-                setMore2BallsInLine([i])
-            }
-
         }
 
 
@@ -422,9 +418,11 @@ export class Game extends Container
 
                 if(doWeHaveOptions() === false) {
                     console.log('RE-CREATION!');
+
                     for(let i = 0; i < balls.length; i++) {
                             balls[i].texture = Texture.from(ballsAddresses[randomNumber()])
                     }
+
                     setTimeout(() => {
                         if(doWeHaveOptions() === false) {
                             console.log('RE-CREATION!');
@@ -434,6 +432,7 @@ export class Game extends Container
                             doWeHaveOptions()
                         }
                     }, 100)
+
                     for(let i = 0; i < balls.length; i++) {
                         setMore2BallsInLine([i])
                     }

@@ -2,7 +2,8 @@
   "name": "demo-project",
   "version": "2.0.0",
   "scripts": {
-    "dev": "webpack-dev-server --mode=development"
+    "dev": "webpack-dev-server --mode=development",
+    "build": "webpack --mode=production"
   },
   "dependencies": {
     "pixi.js": "^6.5.5",
