@@ -275,6 +275,21 @@ export class Game extends Container
                                 ballsInLineIndexes3Times.push(i)
                                 ballsInLineIndexes3Times.push(i + ballsInLine)
                                 ballsInLineIndexes3Times.push(i - ballsInLine)
+                                
+                                if(balls[i].texture === balls[i + ballsInLine * 2]?.texture) {
+                                    ballsInLineIndexes3Times.push(i + ballsInLine * 2)
+                                    if(balls[i].texture === balls[i + ballsInLine * 3]?.texture) {
+                                        ballsInLineIndexes3Times.push(i + ballsInLine * 3)
+                                    }
+                                }
+                                
+                                if(balls[i].texture === balls[i - ballsInLine * 2]?.texture) {
+                                    ballsInLineIndexes3Times.push(i - ballsInLine * 2)
+                                    if(balls[i].texture === balls[i + ballsInLine * 3]?.texture) {
+                                        ballsInLineIndexes3Times.push(i + ballsInLine * 3)
+                                    }
+                                }
+                                
                     }
     
                     if(balls[i].texture === balls[i - 1]?.texture 
@@ -307,10 +322,27 @@ export class Game extends Container
                         && balls[i].texture === balls[i + 1]?.texture
                         && diapasons[itemNumberLineNow]?.includes(i - 1)
                         && diapasons[itemNumberLineNow]?.includes(i + 1)) {
-                            
                                 ballsInLineIndexes3Times.push(i)
                                 ballsInLineIndexes3Times.push(i - 1)
                                 ballsInLineIndexes3Times.push(i + 1)
+
+                                if(balls[i].texture === balls[i - 2]?.texture 
+                                    && diapasons[itemNumberLineNow]?.includes(i - 2)) {
+                                        ballsInLineIndexes3Times.push(i - 2)
+                                        if(balls[i].texture === balls[i - 3]?.texture 
+                                            && diapasons[itemNumberLineNow]?.includes(i - 3)) {
+                                                ballsInLineIndexes3Times.push(i - 3)
+                                        }
+                                }
+                                
+                                if(balls[i].texture === balls[i + 2]?.texture 
+                                    && diapasons[itemNumberLineNow]?.includes(i + 2)) {
+                                        ballsInLineIndexes3Times.push(i + 2)
+                                        if(balls[i].texture === balls[i + 3]?.texture 
+                                            && diapasons[itemNumberLineNow]?.includes(i + 3)) {
+                                                ballsInLineIndexes3Times.push(i + 3)
+                                        }
+                                }
                     }
                 }
 
