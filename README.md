@@ -1,5 +1,9 @@
 # Shariki
 
+Simple game with a lot of bugs :)
+
+Deploy - [https://shariki.vercel.app/](https://shariki.vercel.app/)
+
 ## to start npm run dev
 
 The goal of the game is to score as many points as possible within the allotted time.
